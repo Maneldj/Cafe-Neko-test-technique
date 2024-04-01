@@ -1,42 +1,214 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+  font-family: 'Noemi-Bold';
+  src: url('../public//fonts/Nohemi-Bold.woff');
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 640px) {
+  .menuLinks a.reserveLink {
+    color: #82b2a1;
   }
-  to {
-    transform: rotate(360deg);
+
+  .catLogo{
+    width: 20vw;
+    margin: 0.8em;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burgerMenu {
+    color: black;
+    display: flex;
+    margin: 1em;
+    margin-top: 1.5em;
+  }
+
+  .menuLinks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuLinks a {
+    color: black;
+    padding: 0.5em;
+  }
+
+  .catDrinkCoffee{
+    width: 50vw;
+    margin: 1em;
+  }
+
+  .firstPart {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .secondPart {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .firstTitle{
+    color: #303031;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1;
+    font-size: 2rem;
+    font-family: 'Nohemi-Bold', sans-serif;
+    margin-top: 0;
+  }
+
+  .secondTitle{
+    color: #303031;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1;
+    font-family: 'Nohemi-Bold', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .description{
+    color: #303031;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1;
+  }
+
+  .contactUs{
+    margin: 1em;
+    color: white;
+    background-color: #82b2a1;
+    border-radius: 2em;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .containerAboutUs{
+    background-color: #f3f0ea;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .firstPartAboutUs{
+    margin: 1em;
+    width: 60vw;
+  }
+
+  .titleAboutUs{
+    text-align: center;
+    font-size: 1.6em;
+  }
+
+  .imgAboutUs{
+    width: 60vw;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 641px) {
+  .menuLinks a.reserveLink {
+    color: #82b2a1;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+  }
 
-.read-the-docs {
-  color: #888;
+  .catLogo {
+    width: 10vw;
+    margin: 1em;
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+
+  .menuLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  .menuLinks a {
+    color: black;
+    margin-right: 5em;
+    padding: 1em;
+  }
+
+  .catDrinkCoffee {
+    max-width: 45vw;
+    height: auto;
+    margin: 3em;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .firstPart, .secondPart {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .firstPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15em;
+  }
+
+  .secondPart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 2em;
+  }
+
+  .firstTitle{
+    color: #303031;
+    line-height: 1;
+    font-size: 4rem;
+    font-family: 'Nohemi-Bold', sans-serif;
+    margin-top: 0;
+  }
+
+  .secondTitle{
+    color: #303031;
+    line-height: 1;
+    font-family: 'Nohemi-Bold', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .description{
+    color: #303031;
+    margin-left: 0;
+    line-height: 1;
+    font-size: 1.1em;
+    text-align: left;
+  }
+
+  .contactUs{
+    color: white;
+    background-color: #82b2a1;
+    border-radius: 2em;
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+  }
 }
